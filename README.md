@@ -1,8 +1,18 @@
 # macOS-Monitoring
 Simple monitoring using native macOS commands. These should work on any macOS by downloading, making executable, and running.
 
-Usage (CSV data):
-./metrics.sh > metrics.log
+Usage (CSV data): <br />
+./metrics.sh > metrics.log <br />
+
+Termination: <br />
+./met-term.sh <br />
+./net-stat-term.sh <br />
+
+lightweightmetrics.awk is needed for normal script operation. <br />
+
+Both metrics.awk formats the general metrics output for a curl. <br />
+
+cpu-loop.sh is the most often used for "right-sizing" a VM, and is sperated out so users can easily change the frequency of CPU monitoring by modifying the sleep command. (cpu.awk formats that data for a curl if desired.)
 
 Data Fields: <br />
   FirstField: Date <br />
