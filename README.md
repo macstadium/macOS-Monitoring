@@ -4,7 +4,7 @@ Simple monitoring using native macOS commands. These should work on any macOS by
 Usage (CSV data):
 ./metrics.sh > metrics.log
 
-DataPoints: <br />
+Data Fields: <br />
   FirstField: Date <br />
   NetworkIn: From netstat - Bytes inbound <br />
   NetworkOut: From netstat - Bytes transmitted out <br />
