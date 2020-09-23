@@ -1,8 +1,7 @@
 echo "Time & Date"
 date
 echo "Logical Cores"
-CPU = sysctl -n hw.ncpu
-CPU
+sysctl -n hw.ncpu
 echo "Physical CPU (same for VMs)"
 sysctl -n hw.physicalcpu
 echo "Reported CPU Frequency (Ignores Turboboosting etc)"
