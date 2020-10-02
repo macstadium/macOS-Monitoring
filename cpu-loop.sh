@@ -1,5 +1,4 @@
 #!/bin/bash
-touch cpufree.log
 for (( ; ; ))
 do 
 
