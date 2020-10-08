@@ -18,7 +18,7 @@ Data Fields: <br />
   FirstField: Date <br />
   NetworkIn: From netstat - Bytes inbound <br />
   NetworkOut: From netstat - Bytes transmitted out <br />
-  CPU-USED: From ps - Percent by core, total percentage is 100% x No Cores <br />
+  CPU-USED: From ps - Percent by core, total percentage is 100% x Number of Cores <br />
   FreeMem: From top - Free memory with "M" or "G" on the end <br />
   RAMPlot: FreeMem converted to Megs of RAM, more useful for plotting <br />
   CPUIdle: From top - Percent of total CPU cores (min 0%, max 100%) <br />
