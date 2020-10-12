@@ -5,6 +5,9 @@ Usage (CSV data): <br />
 ./metrics.sh > metrics.log <br />
 
 Termination: <br />
+./term.sh <br />
+
+Or you can kill the specific processes: <br />
 ./met-term.sh <br />
 ./net-stat-term.sh <br />
 
