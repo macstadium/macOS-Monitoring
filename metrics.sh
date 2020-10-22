@@ -28,7 +28,7 @@ do
 	#awk '{if ($3~/trans/){print "\"RWCURRENT\":" $1/$5 ",\"RWTime\":"$5}}' tmp >> curlthis.log
 
 	#Output every full set of data
-	awk '{array[NR]=$0} END{print array[1] "," array[2] array[3] array[4]}' catthis.log
+	awk '{array[NR]=$0} END{print array[1] "," array[2] array[3] array[4] array[5]}' catthis.log
 	#awk -f metrics.awk curlthis.log >> curl.cmd
 
 	#Delay loop as desired
