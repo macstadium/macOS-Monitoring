@@ -32,5 +32,5 @@ do
 	#awk -f metrics.awk curlthis.log >> curl.cmd
 
 	#Delay loop as desired
-	sleep 2 
+	sleep 5
 done
