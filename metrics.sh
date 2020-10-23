@@ -11,7 +11,8 @@ do
         awk 'END{print "NetworkIn,"$3 ",NetworkOut,"$6","}' netstat.log >> catthis.log
         #awk '{if (NR>4){send=send+$3;receive=receive+$6}} END{print "\"NetworkIn\":"send ",\"NetworkOut\":"receive","}' netstat.log >> curlthis.log
 
-	#Direct CPU usuage, ignores core assignment
+	#Direct CPU usuage, ignores core assignment, this is very usefulf or profiling.
+	# It is generaly commented out for performance reasons in monitoring. Running this command and time dd can create an excessive performance hit.
 	ps -A -o %cpu | awk '{s+=$1} END {print "CPU-USED," s "%,"}' >> catthis.log
 	#ps -A -o %cpu | awk '{s+=$1} END {print "\"CPU-USED\":" s "%,"}' >> curlthis.log
 
@@ -31,5 +32,5 @@ do
 	#awk -f metrics.awk curlthis.log >> curl.cmd
 
 	#Delay loop as desired
-	sleep 2 
+	sleep 5
 done
