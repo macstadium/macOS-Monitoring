@@ -21,6 +21,7 @@ do
         #top -l 1 | grep 'PhysMem:\|Disks:\|CPU usage' | awk -f lightmetrics.awk >> curlthis.log
 
 	#Read / Write pressure - the lower this number, the faster the read/write is. This number will be delayed by .15-.7 seconds from the others metrics
+	#Note: If Xcode hangs, comment out this line or create a partition to run this scrtip in
         { time dd if=/dev/zero bs=512k of=tstfile count=512 ; } 2>tmp
 
 	#Text outupt for read/write pressure
