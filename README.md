@@ -33,3 +33,6 @@ Both `metrics.awk` formats the general metrics output for a curl.
 - `DiskWriteCap:` From top - The system reported write cap (usually in G)
 - `RWCURRENT:` From {time dd} - The actual written bytes divided by time to write (bytes/s)
 - `RWTime:` From {time dd} - The time to write the specified data
+
+### Troubleshooting:
+The command `time dd` command can create Xcode to hang if a double write occurs. Should a hung Xcode be noticed, it is recommended this line be commented out, or a seperate partition be created for the metrics.sh script.
